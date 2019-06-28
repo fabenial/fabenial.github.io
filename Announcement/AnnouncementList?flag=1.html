@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PalletOne</title>
+<meta name="description"
+      content="PalletOne，是由来自硅谷、清华大学、早稻田大学等多位技术带头人，历时4年，数次迭代打造的跨链项目，旨在赋能全球顶尖技术高手联合开发区块链世界的IP协议，是一个具有超高性能“无链”之“公链”。">
+<meta name="keywords" content="PalletOne,pallet,跨链,调色板">
+<meta name="robots” content="nofollow” />    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="keywords" content="调色板,pallet,palletone,跨链,区块链,DAG,陪审团">
+    <link rel="shortcut icon" href="../bitbug_favicon.ico"/>    <link rel="stylesheet" type="text/css" href="../palletone/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../palletone/css/time.css"/>
+    <link rel="stylesheet" type="text/css" href="../palletone/css/animate.min.css"/>
+    <link href="https://pallet.one/Announcement/css/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../palletone/css/pc.css%3Fupdate=1.css"/>
+    <style type="text/css">
+        body,
+        td,
+        th {
+            font-family: "Open Sans", helvetica, arial, sans-serif;
+        }
+
+        ui,
+        #qq {
+            display: inline
+        }
+        .notice {
+            opacity: 1;
+            /*background-color: yellow;*/
+            overflow: hidden;
+            width: 1200px;
+            margin: 0 auto;
+            z-index: 1111;
+            min-height: 800px;
+            padding-left: 25px;
+        }
+        .wrap1200 {width:1200px; margin:0 auto; overflow:hidden;}
+        #notice_banner {
+            background-image: url('../palletone/images/notice_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            min-height: 1200px;
+        }
+        .clear {
+            height: 0px;
+            font-size: 0;
+            clear: both;
+        }
+        .red-point{
+            position: relative;
+        }
+
+        .red-point::before{
+            content: " ";
+            border: 3px solid red;/*设置红色*/
+            border-radius:3px;/*设置圆角*/
+            position: absolute;
+            z-index: 1000;
+            right: 0%;
+            margin-right: -10px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?bfd82459b86169e726644f1b748de018";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div id="notice_banner">
+    <div class="header">
+        <div class="wrap1200">
+
+            <div class="left">
+                <a href="../index.html">
+                    <img src="../palletone/images/logo.png" width="201" height="38"/>
+                </a>
+            </div>
+            <div class="right">
+                <ul class="nav">
+                    <li>
+                        <a href="../index.html#Vision">Vision</a></li>
+                    <li>
+                        <a href="../index.html#Usage">Usage</a></li>
+                    <li>
+                        <a href="../index.html#Features">Features</a></li>
+                    <li>
+                        <a href="../index.html#Timeline">Timeline</a></li>
+                    <li>
+                        <a href="../index.html#Team">Team</a></li>
+                    <li>
+                        <a href="../index.html#Ecology">Ecology</a></li>
+                    <li>
+                        <a href="../index.html#QA">Q&A</a></li>
+                    <li>
+                        <a href="AnnouncementList%3Fflag=1.html" target="_self">Announcement</a></li>
+                    <li>
+                        <input type="btn" class="change-btn" readonly="readonly" onclick="javascript:window.location.href='/Announcement/AnnouncementList';" value="中文"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice">
+                <dt style="float: left;margin-top:1px;">
+                <dd style="margin-top: 30px;text-align: left">
+                    <img src="../palletone/images/notice.png"
+                         class="img-responsive img-circle img-small" alt="">
+                    <span style="padding-left: 20px;font-weight:bold;font-size: 18px;">
+                    Announcement</span>
+                    <div style="float: right;border-radius:40px;width: 100px;height: 30px;background-color: #4E73F7;text-align: center;line-height:30px;margin-right: 25px;color: #FAFBFF" onclick="getsearch()" id="search">
+        <img  src="../palletone/images/magnifier.png" alt="">
+        <span>Search</span>
+    </div>
+
+    <div style="float: right;border-radius:40px;width: 400px;height: 30px;text-align: center;line-height:30px;margin-right: 25px;border:1px solid #DFDFDF;display: none" id="getsearch">
+        <input type="text" placeholder="Please input the title you want to search" style="width: 285px;height: 29px;float: left;margin-left: 10px;border:1px solid #DFDFDF;border: 0px;outline:none;cursor: pointer;"  name="keywords" id="keywords" onkeydown="entersearch()">
+
+        <div style="float: right;border-radius:40px;width: 100px;height: 30px;background-color: #4E73F7;text-align: center;line-height:30px;" onclick="search()">
+            <img style="display: inline-block; vertical-align: middle;margin-top: 5px;" src="../palletone/images/magnifier.png" alt="">
+        </div>
+    </div>
+    <script>
+        function entersearch(){
+            var event = window.event || arguments.callee.caller.arguments[0];
+            if (event.keyCode == 13)
+            {
+                search();
+            }
+        }
+        function search() {
+            var inputValue = document.getElementById("keywords").value;
+            if(inputValue){
+                window.location.href="/Announcement/AnnouncementList?keywords="+inputValue;
+            }else{
+                document.getElementById('search').style.display='block';
+                document.getElementById('getsearch').style.display='none';
+            }
+
+        }
+        function getsearch() {
+            document.getElementById('search').style.display='none';
+            document.getElementById('getsearch').style.display='block';
+        }
+    </script>
+
+                    <div class="clear"></div>
+                </dd>
+                <div class="clear"></div>
+                <dd style="margin-top: 70px;"></dd>
+                                    <dd style="font-size: 18px; ">
+                        <span style="float: left;color: #919daf;">2019-06-26</span>
+                        <span
+                                                                class="red-point"
+                                                                style="float: left;margin-left:18px;overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:1000px;
+        display:block; "><a
+                                    href="AnnouncementDetail/110%3Fflag=1.html">Announcement | PalletOne Main Network Will Be Officially Launched on June 30th</a></span>
+                        <span style="float: right;margin-right: 25px;"><a href="AnnouncementDetail/110%3Fflag=1.html"><img src="../palletone/images/right.png" class="img-responsive img-circle img-small" alt=""></a></span>
+                        <span style="float: left"><div
+                                    style="width:1200px;height:0px;border-top:1px  #919daf dashed;margin-top: 30px;margin-bottom: 30px;"/></span>
+                    </dd>
+                    <div class="clear"></div>
+                                        <dd style="font-size: 18px; ">
+                        <span style="float: left;color: #919daf;">2019-06-18</span>
+                        <span
+                                                                style="float: left;margin-left:18px;overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:1000px;
+        display:block; "><a
+                                    href="AnnouncementDetail/86%3Fflag=1.html">Technical Progress | PalletOne Has Implemented ETH Deposit and Withdrawal Contracts</a></span>
+                        <span style="float: right;margin-right: 25px;"><a href="AnnouncementDetail/86%3Fflag=1.html"><img src="../palletone/images/right.png" class="img-responsive img-circle img-small" alt=""></a></span>
+                        <span style="float: left"><div
+                                    style="width:1200px;height:0px;border-top:1px  #919daf dashed;margin-top: 30px;margin-bottom: 30px;"/></span>
+                    </dd>
+                    <div class="clear"></div>
+                                        <dd style="font-size: 18px; ">
+                        <span style="float: left;color: #919daf;">2019-06-14</span>
+                        <span
+                                                                style="float: left;margin-left:18px;overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:1000px;
+        display:block; "><a
+                                    href="AnnouncementDetail/84%3Fflag=1.html">Technical Progress | PalletOne Has Implemented Automated Testing of Mediator Transition</a></span>
+                        <span style="float: right;margin-right: 25px;"><a href="AnnouncementDetail/84%3Fflag=1.html"><img src="../palletone/images/right.png" class="img-responsive img-circle img-small" alt=""></a></span>
+                        <span style="float: left"><div
+                                    style="width:1200px;height:0px;border-top:1px  #919daf dashed;margin-top: 30px;margin-bottom: 30px;"/></span>
+                    </dd>
+                    <div class="clear"></div>
+                                        <dd style="font-size: 18px; ">
+                        <span style="float: left;color: #919daf;">2019-06-13</span>
+                        <span
+                                                                style="float: left;margin-left:18px;overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:1000px;
+        display:block; "><a
+                                    href="AnnouncementDetail/82%3Fflag=1.html">Technical Progress | The Automatic Upgrading function of PalletOne Data Version Has Been Completed</a></span>
+                        <span style="float: right;margin-right: 25px;"><a href="AnnouncementDetail/82%3Fflag=1.html"><img src="../palletone/images/right.png" class="img-responsive img-circle img-small" alt=""></a></span>
+                        <span style="float: left"><div
+                                    style="width:1200px;height:0px;border-top:1px  #919daf dashed;margin-top: 30px;margin-bottom: 30px;"/></span>
+                    </dd>
+                    <div class="clear"></div>
+                                        <dd style="font-size: 18px; ">
+                        <span style="float: left;color: #919daf;">2019-06-05</span>
+                        <span
+                                                                style="float: left;margin-left:18px;overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:1000px;
+        display:block; "><a
+                                    href="AnnouncementDetail/108%3Fflag=1.html">Technical Progress | The Development of PalletOne Block Explorer Has Been Completed and Entered the Internal Testing Phase</a></span>
+                        <span style="float: right;margin-right: 25px;"><a href="AnnouncementDetail/108%3Fflag=1.html"><img src="../palletone/images/right.png" class="img-responsive img-circle img-small" alt=""></a></span>
+                        <span style="float: left"><div
+                                    style="width:1200px;height:0px;border-top:1px  #919daf dashed;margin-top: 30px;margin-bottom: 30px;"/></span>
+                    </dd>
+                    <div class="clear"></div>
+                                        </dt>
+                    <style type="text/css">
+        .click:active{ background-color:#4E73F7;}
+    </style>
+    <div style="width: 1200px;height: 30px;text-align: center;line-height: 30px;font-size: 14px;color: #A8AFB8;padding-bottom: 2px;padding-top: 2px;margin-top: 40px;">
+        <div class="click" style="text-align: center;float:left;margin-left: 300px;line-height: 30px;width: 80px;border:1px solid #E4E4E4;" onmouseout="this.style.backgroundColor=blue" ><a style="color:#B2B7BB ;"
+                    href="AnnouncementList%3Fpage=1&amp;flag=1.html">First page</a></div>
+        <div class="click" style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 100px;border:1px solid #E4E4E4"><a  style="color:#B2B7BB ;" href="https://pallet.one/Announcement/&amp;flag=1">Previous page</a>
+        </div>
+        <div class="click" style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 84px;border:1px solid #E4E4E4"><a  style="color:#B2B7BB ;" href="AnnouncementList%3Fpage=2&amp;flag=1.html"
+                                                                             rel="next">Next page</a></div>
+        <div class="click" style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 80px;border:1px solid #E4E4E4"><a  style="color:#B2B7BB ;"
+                    href="AnnouncementList%3Fpage=9&amp;flag=1.html">Last page</a></div>
+        <div class="click" style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 40px;border:1px solid #E4E4E4"><input type="text" id="page" style="width: 38px;height: 28px;">
+        </div>
+        <div class="click" onclick="getpage()" style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 80px;border:1px solid #E4E4E4;color:#B2B7BB ">Location</div>
+    <div style="float:left;text-align: center;margin-left: 10px;line-height: 30px;width: 100px;border:1px solid #E4E4E4;color:#B2B7BB">
+        <span>9Page/1Page</span>
+    </div>
+    </div>
+    <script>
+        function getpage() {
+            var inputValue = document.getElementById("page").value;
+            var count="9"
+            if(inputValue && parseInt(inputValue)<=parseInt(count)){
+                window.location.href="/Announcement/AnnouncementList?page="+inputValue+"&flag=1";
+            }
+        }
+    </script>
+    
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<div style="width: 100%;height: 60px;background: #15184F;margin-bottom:0px;border-top-left-radius:40px;border-top-right-radius:40px;text-align:center;line-height:60px;">
+    <span style="display: block;margin: auto;">PalletOne publishes its official announcements via http://pallet.one, @pallet.one mails, and our published media accounts. Everything else is most likely scam.
+    </span>
+</div></body>
+
+</html>
+<script>
+    let target = document.querySelectorAll('img');
+    //遍历页面里所有获取到的a标签并执行需求的事件
+    for (var i = 0; i < target.length; i++) {
+        //给页面里每个a标签设置target属性并赋值
+        target[i].setAttribute('alt','PalletOne');
+    }
+
+    let target2 = document.querySelectorAll('a');
+    for (var k = 0; k < target2.length; k++) {
+        //给页面里每个a标签设置target属性并赋值
+        target2[k].setAttribute('rel','external nofollow');
+        // target2[k].setAttribute('target','_blank');
+    }
+</script>
